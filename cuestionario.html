@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cuestionario</h1>
+    <form action="resultado.php" method="post">
+        <ol>
+            <li>¿Qué etiqueta HTML se usa para crear un botón de radio?</li>
+            <input type="radio" name="uno" value="0">Checkbox
+            <input type="radio" name="uno" value="1">input type="radio"
+            <input type="radio" name="uno" value="0">radioButton
+
+            
+            <li> ¿Cómo se agrupan los botones de radio para que solo se pueda seleccionar uno a la vez?
+            </li>
+            <input type="radio" name="dos" value="1"> Asignándoles el mismo atributo name
+            <input type="radio" name="dos" value="0">Colocándolos dentro de un div
+            <input type="radio" name="dos" value="0">Dándoles un ID único
+
+            <li>¿Cuál es la diferencia entre input type="checkbox" y input type="radio"?
+
+            </li>
+            <input type="radio" name="tres" value="1"> Los checkboxes permiten múltiples selecciones, los radio solo una 
+            <input type="radio" name="tres" value="0">Los radio siempre están marcados por defecto
+            <input type="radio" name="tres" value="0"> No hay ninguna diferencia
+
+            <li> ¿Qué etiqueta se usa para crear un menú desplegable (combobox) en HTML?
+            </li>
+            <input type="radio" name="cuatro" value="0"> dropdown
+            <input type="radio" name="cuatro" value="1">selec
+            <input type="radio" name="cuatro" value="0">combo
+
+            <li>¿Cómo se define una opción seleccionada por defecto en un combobox?
+
+            </li>
+            <input type="radio" name="cinco" value="0">Usando el atributo checked
+            <input type="radio" name="cinco" value="0"> Con el atributo default
+            <input type="radio" name="cinco" value="1"> Agregando selected a la opción
+
+            <li> ¿Cómo se capturan múltiples valores de checkbox en un formulario HTML?
+
+            </li>
+            <input type="radio" name="seis" value="1"> Usando name="opciones[]"
+            <input type="radio" name="seis" value="0">Escribiendo value="multiple" 
+            <input type="radio" name="seis" value="0"> Agrupándolos en un select
+
+            <li> ¿Para qué se usa la etiqueta div en HTML?
+
+            </li>
+            <input type="radio" name="siete" value="1"> Para agrupar elementos y aplicar estilos
+            <input type="radio" name="siete" value="0">Para insertar imágenes 
+            <input type="radio" name="siete" value="0"> Para crear botones
+
+            <li>  ¿Cómo se hace un formulario en HTML que envíe datos a un archivo PHP?
+
+            </li>
+            <input type="radio" name="ocho" value="1"> form action="archivo.php" method="post"
+            <input type="radio" name="ocho" value="0">form send="archivo.php" 
+            <input type="radio" name="ocho" value="0"> form transfer="php"
+            
+            <li>¿Qué atributo permite hacer que un input sea obligatorio antes de enviar un formulario?
+
+            </li>
+            <input type="radio" name="nueve" value="0">must
+            <input type="radio" name="nueve" value="1">required
+            <input type="radio" name="nueve" value="0"> validate 
+
+            <li>¿Qué diferencia hay entre los métodos de envío POST y GET en un formulario HTML? </li>
+            <input type="radio" name="diez" value="1">GET envía datos en la URL y POST en el cuerpo de la solicitud 
+            <input type="radio" name="diez" value="0"> POST no funciona con PHP 
+            <input type="radio" name="diez" value="0"> GET es más seguro que POST
+
+            <li> ¿Cómo se declara un contenedor con CSS Grid en una página web?  </li>
+            <input type="radio" name="once" value="0">display: flex;
+            <input type="radio" name="once" value="1"> display: grid;
+            <input type="radio" name="once" value="0"> display: table; 
+            
+            <li> ¿Qué propiedad CSS define el número de columnas en una grid?                              </li>
+            <input type="radio" name="doce" value="1">grid-template-columns 
+            <input type="radio" name="doce" value="0">columns-width 
+            <input type="radio" name="doce" value="0">  grid-size
+            
+            <li>¿Cómo se usa grid-template-areas para organizar los elementos de una página?                 </li>
+            <input type="radio" name="trece" value="1">Asignando nombres a cada área y definiendo su distribución
+            <input type="radio" name="trece" value="0">  Usando float: left;
+            <input type="radio" name="trece" value="0"> Aplicando position: absolute;
+
+            <li>   ¿Cuál es la diferencia entre justify-content y align-items en CSS Grid?                              </li>
+            <input type="radio" name="catorce" value="1">justify-content alinea en horizontal y align-items en vertical
+            <input type="radio" name="catorce" value="0"> No hay diferencia
+            <input type="radio" name="catorce" value="0"> justify-content solo funciona con flexbox
+            
+            <li>  ¿Cómo se puede hacer que un div ocupe varias columnas en CSS Grid?                              </li>
+            <input type="radio" name="quince" value="1">Usando grid-column: span X;
+            <input type="radio" name="quince" value="0"> Con column-width: X;
+            <input type="radio" name="quince" value="0"> Con float: left;
+            
+            <li>  ¿Cómo se obtiene el valor seleccionado de un botón de radio en PHP?                              </li>
+            <input type="radio" name="dieciseis" value="1">$_POST['nombre_radio'] 
+            <input type="radio" name="dieciseis" value="0"> $_SESSION['radio']
+            <input type="radio" name="diecicseis" value="0"> $_SERVER['radio']
+            
+            <li>  ¿Qué función de PHP se usa para recibir datos de un formulario con el método POST?                             </li>
+            <input type="radio" name="diecisiete" value="1"> $_POST
+            <input type="radio" name="diecisiete" value="0"> $_GET
+            <input type="radio" name="diecisiete" value="0"> $_FORM
+            
+            <li> ¿Cómo se verifica en PHP si un checkbox fue marcado en un formulario?                             </li>
+            <input type="radio" name="dieciocho" value="1">isset($_POST['checkbox'])
+            <input type="radio" name="dieciocho"value="0">  empty($_POST['checkbox'])
+            <input type="radio" name="dieciocho" value="0"> $_SESSION['checkbox']
+            
+            <li>  ¿Cómo se accede al valor seleccionado de un combobox en PHP?                               </li>
+            <input type="radio" name="diecinueve" value="1">$_POST['combobox']
+            <input type="radio" name="diecinueve" value="0">  $_SERVER['combobox']
+            <input type="radio" name="diecinueve" value="0">  $_SESSION['combobox']
+            
+            <li>¿Qué función de PHP permite redirigir a otra página después de procesar un formulario?                              </li>
+            <input type="radio" name="veinte" value="1">header("Location: pagina.php");
+            <input type="radio" name="veinte" value="0"> redirect("pagina.php");
+            <input type="radio" name="veinte" value="0"> move("pagina.php");
+        </ol>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
